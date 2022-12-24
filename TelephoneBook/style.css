@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.global-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.root > .form-container {
+    margin: 30px 0 50px;
+    width: 100%;
+}
+
+.root > .form-container > form {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(4,250px);
+    grid-column-gap: 35px;
+    grid-row-gap: 30px;
+    justify-content: center;
+}
+
+.root > .form-container > form input {
+    box-sizing: border-box;
+    border: 2px solid black;
+    box-shadow: 1px 1px 4px black;
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.root > .form-container > form input::placeholder {
+    text-align: center;
+}
+
+.root > .form-container > form button {
+    grid-column: 1/5;
+    justify-self: center;
+    padding: 15px 50px;
+    font-size: 24px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 4px 4px 6px black;
+    transition: all .4s ease-in-out;
+}
+
+.root > .form-container > form button:hover {
+    box-shadow: 1px 1px 1px black;
+}
+
+.root .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:  45px;
+    margin-bottom: 50px;
+}
+
+.root .container .contact {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    justify-content: center;
+    grid-column-gap: 35px;
+    grid-row-gap: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.root .container .contact button {
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
