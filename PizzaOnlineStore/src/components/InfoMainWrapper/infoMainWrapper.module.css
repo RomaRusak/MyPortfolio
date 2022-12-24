@@ -1,0 +1,16 @@
+.infoMainWrapper {
+  display: grid;
+  grid-row: auto auto;
+}
+
+@media (max-width: 1153px) {
+  .infoMainWrapper {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+@media (max-width: 643px) {
+  .infoMainWrapper {
+    grid-template-columns: 1fr 150px;
+  }
+}

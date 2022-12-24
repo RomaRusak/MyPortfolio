@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.pizzaCartInnerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pizzaCartInnerWrapper img {
+  max-height: 115px;
+}
+
+.pizzaCartInnerTitle {
+  font-weight: 600;
+  font-size: 20px;
+  color: #24262f;
+  margin-bottom: 5px;
+  font-family: 'Signika', sans-serif;
+}
+
+.pizzaCartInnerPrice {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 15px;
+  color: #fd5c2e;
+  margin-bottom: 5px;
+  font-family: 'Signika', sans-serif;
+}
+
+.pizzaCartInnerButton {
+  background: #ffaa2c;
+  padding: 10px 30px;
+  border-radius: 18px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'Signika', sans-serif;
+}
+
+.pizzaCartInfoBlockWrapper {
+  min-height: 79px;
+}
+
+.pizzaCartInfoBlock {
+  display: flex;
+  align-self: center;
+}
+
+.pizzaCartInfoBlockTitle {
+  width: 200px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pizzaCartInfoBlockCounter {
+  color: #fd5c2e;
+  font-family: 'Signika', sans-serif;
+}
+
+.pizzaCartInfoBlock button {
+  cursor: pointer;
+  padding: 2px 3px;
+  border-radius: 20%;
+  position: relative;
+  background-color: #ffaa2c;
+  font-size: 16px;
+}
+
+@media (max-width: 1152px) {
+  .pizzaCartInfoBlockWrapper {
+    min-height: 30px;
+  }
+}

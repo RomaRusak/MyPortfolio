@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+.cartModalWrapper {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+}
+
+.cartModalContainer {
+  background: white;
+  backdrop-filter: none;
+  position: fixed;
+  top: calc(50% - 250px);
+  left: calc(50% - 250px);
+  height: 500px;
+  width: 500px;
+  padding: 20px;
+  position: relative;
+  font-family: 'Signika', sans-serif;
+  color: #24262f;
+  display: grid;
+  grid-template-rows: 1.2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.closeModalWrapper > img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+}
+
+.modalTitle {
+  font-weight: 600;
+  font-size: 24px;
+  color: #24262f;
+  margin-bottom: 5px;
+}
+
+.modalImage {
+  height: 170px;
+  width: 370px;
+  margin-bottom: 15px;
+}
+
+.modalPrice {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 15px;
+  color: #fd5c2e;
+  margin-bottom: 5px;
+  font-family: 'Signika', sans-serif;
+  margin-bottom: 15px;
+}
+
+.modalTop {
+  grid-column: 1/3;
+}
+
+.modalBottomLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 15px;
+}
+
+.modalBottomLeft .modalComposition {
+  text-align: justify;
+}
+
+.cartModalContainer label {
+  cursor: pointer;
+}
+
+.modalBottomLeft > form {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  flex-wrap: wrap;
+}
+
+.modalBottomLeft input[type='radio'] {
+  margin-right: 5px;
+}
+
+.modalButtonWrapper {
+  display: flex;
+  justify-content: start;
+}
+
+.modalButtonWrapper > button {
+  background: #ffaa2c;
+  padding: 12px 30px;
+  border-radius: 18px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modalBottonRight h3 {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.modalBottonRight ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 600px) {
+  .cartModalContainer {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 475px) {
+  .modalBottonRight h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 403px) {
+  .cartModalContainer {
+    grid-template-rows: 1.2fr 1fr 1fr;
+    padding: 10px;
+  }
+
+  .modalBottomLeft,
+  .modalBottonRight {
+    grid-column: 1/3;
+  }
+
+  .modalButtonWrapper {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .modalButtonWrapper > button {
+    padding: 15px 30px;
+  }
+
+  .modalBottonRight h3 {
+    text-align: center;
+  }
+
+  .modalBottonRight ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 18px;
+  }
+
+  .modalTop > img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 350px) {
+  .cartModalContainer {
+    padding-top: 55px;
+  }
+}
+
+@media (max-width: 325px) {
+  .modalBottomLeft > form {
+    font-size: 16px;
+  }
+
+  .modalButtonWrapper > button {
+    padding: 12px 30px;
+  }
+
+  .modalBottonRight ul {
+    font-size: 16px;
+  }
+}

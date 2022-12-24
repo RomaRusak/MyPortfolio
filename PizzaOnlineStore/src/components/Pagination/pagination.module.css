@@ -1,0 +1,25 @@
+.pagintaionWrapper {
+}
+
+.pagintaionWrapper .pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.pagintaionWrapper .pagination .pageNumber {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px black;
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.pagintaionWrapper .pagination .pageNumberActive {
+  background-color: #ffaa2c;
+}

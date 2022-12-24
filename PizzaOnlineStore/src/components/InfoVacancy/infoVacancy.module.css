@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+.infoVacancyWrapper {
+  box-sizing: border-box;
+  padding-top: 50px;
+  font-family: 'Signika', sans-serif;
+  color: #24262f;
+  padding-left: 35px;
+}
+
+.infoVacancyTitle {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #ffaa2c;
+  text-shadow: 1px 1px 1px black;
+}
+
+.accordionHead {
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #ffaa2c;
+  color: #ffaa2c;
+  text-shadow: 1px 1px 1px black;
+}
+
+.accordionHead:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.accordionBody {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+.accordionTitle {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.marginBottom {
+  margin-bottom: 15px;
+}
+
+.accordionSection {
+  width: 600px;
+}
+
+.accordionList {
+  text-align: left;
+}
+
+.accordionList li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.accordionList li {
+  padding-left: 20px;
+}
+
+@media (max-width: 1153px) {
+  .infoVacancyWrapper {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+}
+
+@media (max-width: 843px) {
+  .accordionSection {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 743px) {
+  .accordionSection {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 582px) {
+  .accordionSection {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 500px) {
+  .infoVacancyWrapper {
+    grid-column: 1/3;
+    padding: 0 25px;
+  }
+
+  .infoVacancyTitle {
+    font-size: 33px;
+  }
+
+  .accordionHead {
+    font-size: 28px;
+  }
+
+  .accordionBody {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .accordionSection {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .infoVacancyTitle {
+    font-size: 31px;
+  }
+
+  .accordionHead {
+    font-size: 27px;
+  }
+
+  .accordionBody {
+    font-size: 14px;
+  }
+
+  .marginBottom {
+    margin-bottom: 10px;
+  }
+}

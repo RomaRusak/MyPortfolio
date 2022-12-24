@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+.deliveryConditionContainer {
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px;
+  font-family: 'Signika', sans-serif;
+  color: #24262f;
+}
+
+.deliveryConditionWrapper {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartEmptyTime {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.orange {
+  color: #ffaa2c;
+}
+
+.deliveryConditionDescription {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .deliveryConditionContainer {
+    margin: 100px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .deliveryConditionContainer {
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .deliveryConditionContainer {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .deliveryConditionContainer {
+    grid-column: 1/3;
+  }
+}

@@ -1,0 +1,39 @@
+.sortInputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sortInputWrapper p:first-child {
+  margin-bottom: 8px;
+}
+
+.sortInputWrapper input[type='range'] {
+  cursor: pointer;
+  height: 7px;
+  opacity: 0.8;
+}
+
+.sortInputWrapper input[type='range']:hover {
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .sortInputWrapper {
+    grid-column: -2/-1;
+    justify-self: end;
+    max-width: 175px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 494px) {
+  .sortInputWrapper {
+    grid-column: 1/4;
+  }
+}
+
+@media (max-width: 350px) {
+  .sortInputWrapper {
+    justify-self: center;
+  }
+}

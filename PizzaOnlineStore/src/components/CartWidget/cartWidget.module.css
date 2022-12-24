@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+.cartWidgetWrapper {
+  position: fixed;
+  top: 5px;
+  right: -25px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  font-family: 'Signika', sans-serif;
+  color: #24262f;
+  font-weight: 300;
+}
+
+.cartWidgetImgWrapper {
+  position: relative;
+  height: 130px;
+  width: 130px;
+}
+
+.cartWidgetImgWrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1152px) {
+  .cartWidgetWrapper {
+    top: 121px;
+  }
+}
+
+@media (max-width: 780px) {
+  .cartWidgetImgWrapper {
+    position: relative;
+    height: 100px;
+    width: 100px;
+  }
+
+  .cartWidgetWrapper {
+    width: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cartWidgetImgWrapper {
+    position: relative;
+    height: 100px;
+    width: 100px;
+  }
+
+  .cartWidgetWrapper {
+    width: 130px;
+  }
+
+  .cartWidgetWrapper h4 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cartWidgetWrapper {
+    display: none;
+  }
+}

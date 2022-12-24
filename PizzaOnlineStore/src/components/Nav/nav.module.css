@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.nav {
+  padding: 40px 0;
+  background: url(../../images/navBackground.jpg) repeat;
+  position: relative;
+}
+
+.nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgb(0, 0, 0, 0.2);
+}
+
+.navContainer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  min-height: 41px;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 1px 1px black;
+}
+
+.nav ul a {
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 15px;
+  text-shadow: 1px 1px 1px black;
+  position: relative;
+}
+
+.navLink {
+  transition: color 0.3s ease-in-out;
+}
+
+.activeNavLink {
+  color: gold !important;
+}
+
+.nav ul a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 50%;
+  background: linear-gradient(
+    90deg,
+    #eae4c3,
+    #e7da8e,
+    #ead562,
+    #eed12b,
+    #eeb02b
+  );
+  transition: width 0.3s 0.2s ease-out;
+  transform: translateX(-50%);
+}
+
+.nav ul a:hover:after,
+.nav ul a:hover:focus {
+  width: 100%;
+}
+
+.burgerMenu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  z-index: 3;
+  cursor: pointer;
+  width: 61px;
+  margin-left: 25px;
+}
+
+.burgerMenuClose {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 61px;
+  margin-left: 25px;
+  position: relative;
+}
+
+.burgerMenuClose span:nth-child(1) {
+  display: none;
+}
+
+.burgerMenuClose span:nth-child(2) {
+  transform: rotate(210deg);
+  position: absolute;
+  top: -3px;
+  right: 1px;
+  display: none;
+}
+
+.burgerMenuClose span:nth-child(3) {
+  transform: rotate(151deg);
+  position: absolute;
+  top: -3px;
+  right: 1px;
+  display: none;
+}
+
+.burgerMenuItem {
+  width: 100%;
+  height: 7px;
+  background-color: whitesmoke;
+  border-radius: 2px;
+}
+
+@media (max-width: 1024px) {
+  .burgerMenu {
+    display: flex;
+  }
+
+  .nav ul {
+    display: none;
+    width: 90%;
+  }
+
+  .nav .navActive {
+    display: flex;
+  }
+
+  .burgerMenuClose span:nth-child(2),
+  .burgerMenuClose span:nth-child(3) {
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav ul a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 837px) {
+  .nav ul a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 725px) {
+  .nav ul a {
+    padding: 0;
+  }
+}
+
+@media (max-width: 552px) {
+  .navContainer  {
+    min-height: 42.4px;
+  }
+
+  .nav .navActive {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: end;
+    justify-items: start;
+    gap: 4px;
+  }
+
+  .nav .navActive li:nth-child(2),
+  .nav .navActive li:nth-child(4) {
+    justify-self: end;
+    padding-right: 5px;
+  }
+
+  .nav ul {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 355px) {
+  .nav ul a {
+    font-size: 17px;
+  }
+
+  .nav ul {
+    padding-right: 10px;
+  }
+
+  .burgerMenu {
+    margin-left: 10px;
+  }
+
+  .burgerMenuClose {
+    margin-left: 12px;
+  }
+}
+

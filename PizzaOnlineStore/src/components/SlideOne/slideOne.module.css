@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+.sliderItem {
+  min-width: 100%;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0) px;
+  font-family: 'Signika', sans-serif;
+  background-color: yellow;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url('../../images/slideOneBackgroundpng.png');
+  background-repeat: no-repeat;
+  background-position: bottom right 40px;
+  background-size: 400px 400px;
+  text-align: left;
+}
+
+.slideTop {
+}
+
+.slideTitle {
+  font-size: 35px;
+  font-weight: 600;
+  color: #ffaa2c;
+  text-shadow: 1px 1px 1px black;
+}
+
+.slideSubTitle {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ffaa2c;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 35px;
+}
+
+.slidePromo {
+  font-size: 75px;
+  font-weight: 600;
+  color: green;
+  margin-top: 30px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.slideDescription {
+  max-width: 700px;
+  text-align: justify;
+  color: black;
+  text-shadow: 0px 0px 1px black;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+@media (max-width: 1153px) {
+  .sliderItem {
+    background-position: bottom 30px right 40px;
+    background-size: 300px 300px;
+  }
+
+  .slideTitle {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .slideSubTitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .slidePromo {
+    font-size: 60px;
+  }
+
+  .slideDescription {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 1019px) {
+  .slideDescription {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1019px) {
+  .sliderItem {
+    background-position: center right 40px;
+    background-size: 300px 300px;
+  }
+
+  .slideDescription {
+    max-width: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .slideTitle {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 590px) {
+  .sliderItem {
+    padding: 10px;
+    background-size: 250px 250px;
+  }
+}
+
+@media (max-width: 415px) {
+  .sliderItem {
+    background-size: 250px 250px;
+  }
+
+  .slideTitle,
+  .slideSubTitle {
+    text-align: left;
+  }
+}
+
+@media (max-width: 350px) {
+  .sliderItem {
+    background-size: 200px 200px;
+  }
+
+  .slideTitle {
+    font-size: 22px;
+  }
+
+  .slideSubTitle {
+    font-size: 17px;
+  }
+
+  .slidePromo {
+    font-size: 50px;
+  }
+}
