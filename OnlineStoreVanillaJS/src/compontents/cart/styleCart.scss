@@ -1,0 +1,16 @@
+.cart-wrapper {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 190px;
+    text-decoration: none;
+    color: black;
+
+    .Cart-img {
+        height: 150px;
+        width: 150px;
+    }
+}
