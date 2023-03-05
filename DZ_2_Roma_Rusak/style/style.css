@@ -224,6 +224,7 @@ button:hover {
   font-weight: 700;
   font-size: 38px;
   line-height: 48px;
+  text-transform: uppercase;
 }
 
 .our-services-title {
@@ -338,6 +339,10 @@ button:hover {
 
 /*----------------------------------------------------------------*/
 
+.get-cosultation {
+  padding-bottom: 112px;
+}
+
 .get-consultation-inner-block {
   background: url(../img/getConsultation-background.png);
   background-position: right;
@@ -433,4 +438,74 @@ button:hover {
   color: #ffffff;
   cursor: pointer;
   padding: 14px 55px;
+}
+
+/*----------------------------------------------------------------*/
+.our-works {
+  padding-bottom: 90px;
+}
+
+.our-works-title {
+  margin-bottom: 41px;
+}
+
+.our-works-inner-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.our-works-example {
+  padding: 25px 28px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+}
+
+.example-logo-wrapper {
+  margin-bottom: 4px;
+}
+
+.example-description {
+  margin-bottom: 24px;
+}
+
+.example-result {
+  padding: 21px 0 25px;
+  background-color: #F3F1FE;
+}
+
+.example-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.example-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.example-list-bold {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+.systems-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.systems-logo-wrapper {
+  display: flex;
+  gap: 16px;
 }
