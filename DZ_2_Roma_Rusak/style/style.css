@@ -49,6 +49,10 @@ button:hover {
   padding: 8px 148px 8px 115px;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -471,7 +475,7 @@ button:hover {
 
 .example-result {
   padding: 21px 0 25px;
-  background-color: #F3F1FE;
+  background-color: #f3f1fe;
 }
 
 .example-title {
@@ -538,7 +542,7 @@ button:hover {
 }
 
 .footer-button-wrapper > button {
-  background: linear-gradient(115.11deg, #F32C6D 10.12%, #CB1D95 100.01%);
+  background: linear-gradient(115.11deg, #f32c6d 10.12%, #cb1d95 100.01%);
   border-radius: 9px;
   padding: 14px 42px;
   border: none;
@@ -546,7 +550,7 @@ button:hover {
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-right-part {
@@ -576,9 +580,9 @@ button:hover {
 }
 
 .footer-bottom {
-  background-color: #2D2D2D;
+  background-color: #2d2d2d;
   display: flex;
   justify-content: center;
   padding: 3px 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
