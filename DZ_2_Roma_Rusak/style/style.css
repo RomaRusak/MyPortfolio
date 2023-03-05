@@ -509,3 +509,76 @@ button:hover {
   display: flex;
   gap: 16px;
 }
+
+/*----------------------------------------------------------------*/
+
+.footer {
+  padding: 52px 103px;
+}
+
+.footer-top {
+  display: flex;
+  gap: 201px;
+  margin-bottom: 73px;
+}
+
+.footer-logo-wrapper {
+  margin-bottom: 5px;
+}
+
+.footer-logo-wrapper + a {
+  text-decoration: none;
+  color: #333333;
+  padding-left: 20px;
+}
+
+.footer-button-wrapper {
+  margin-top: 22px;
+  padding-left: 22px;
+}
+
+.footer-button-wrapper > button {
+  background: linear-gradient(115.11deg, #F32C6D 10.12%, #CB1D95 100.01%);
+  border-radius: 9px;
+  padding: 14px 42px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.footer-right-part {
+  display: flex;
+  gap: 257px;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-list li:nth-child(1) {
+  margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.footer-bottom {
+  background-color: #2D2D2D;
+  display: flex;
+  justify-content: center;
+  padding: 3px 0;
+  color: #FFFFFF;
+}
