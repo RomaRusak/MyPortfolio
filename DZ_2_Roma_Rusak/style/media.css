@@ -1,4 +1,21 @@
+@media (max-width: 1300px) {
+  .footer-top,
+  .footer-right-part {
+    gap: 150px;
+    justify-content: space-between;
+  }
+}
+
+
 @media (max-width: 1200px) {
+
+  .header,
+  .main,
+  .footer {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
   .header {
     min-height: 70px;
   }
@@ -47,4 +64,91 @@
   .burger-active ~ .get-call-button {
     display: block;
   }
+
+  /*------------------------------------------------------------*/
+
+  .promotion-title {
+    max-width: none;
+    align-self: center;
+  }
+
+  /*-----------------------------------------------------------*/
+
+  .design-title {
+    text-align: center;
+  }
+
+  .design-inner-bottom {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    grid-row-gap: 20px;
+  }
+
+  .desig-item:nth-child(even) {
+    justify-self: end;
+  }
+
+  .desig-item:not(:last-child) {
+    border-right: none;
+  }
+
+  .desig-item:not(:first-child) {
+    padding-left: 0;
+  }
+
+  /*-----------------------------------------------------------*/
+
+  .our-services-title {
+    text-align: center;
+  }
+
+  .our-services-inner-block {
+    grid-template-columns: repeat(auto-fill, minmax(230px, .5fr));
+    justify-content: space-between;
+    grid-row-gap: 18px;
+  }
+
+  /*----------------------------------------------------------------*/
+
+  .get-consultation-title {
+    max-width: none;
+    text-align: center;
+  }
+
+   /*---------------------------------------------------------------*/
+   
+   .our-works-title {
+    text-align: center;
+   }
+
+   /*---------------------------------------------------------------*/
+
+   .our-works-inner-block {
+    grid-template-columns: repeat(auto-fit, minmax(410px, .7fr));
+    justify-content: center;
+    grid-row-gap: 20px;
+   }
+
+   /*---------------------------------------------------------------*/
+
+   .footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+   }
+
+   .footer-right-part {
+    gap: 0;
+   }
+  
+}
+
+@media (max-width: 1024px) {
+  .promotion-inner-block,
+  .get-consultation-inner-block{
+    background-size: contain;
+    background-position: center;
+  }
+
 }
